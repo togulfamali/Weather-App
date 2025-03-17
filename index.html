@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - By Gulfam Ali</title>
+    <link rel="shortcut icon" href="./NAJVNRb.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+<div class="container">
+    <div class="weather-input">
+
+     
+      <div class="input-group">
+        <input type="text"
+         id="userlocation" 
+         placeholder="Serch for places.."
+         />
+         <select class="converter" id="converter">
+          <option>°C</option>
+          <option>°F</option>
+         </select>
+
+
+         <i class="fa fa-search" onclick="findUserLocation()">
+
+         </i>
+        </div>
+        <div class="weatherIcon"></div>
+        <h2 class="tempareture"></h2>
+        <div class="feelslike"></div>
+        <div class="discription"></div>
+        <hr />
+        <div class="date"></div>
+        <div class="city"></div>
+
+
+    </div>
+
+
+  <div class="weather-output">
+      <h2 class="heading"><ins>Today's Highlights</ins></h2>
+      <div class="Highlight">
+        <div class="humidity">
+          Humidity
+          <img src="file:///C:/Users/ga787/Downloads/icons8-humidity-80.png" width="60px" height="55px" style="padding-left: 5px;">
+          <h1 class="HValue"></h1>
+        </div>
+
+          <div class="wind-speed">
+            Wind Speed
+            <img src="file:///C:/Users/ga787/Downloads/wind%20(1).png" width="65px" height="55px" style="padding-left: 8px;">
+            <h1 class="WValue"></h1>
+          </div>
+            <div class="sun">
+           <span>
+            <img src="file:///C:/Users/ga787/Downloads/sun.png" width="60px" height="55px" style="padding-left: 0px;">
+            <p><span id="SRValue"></span>Sunrise</p>
+          </span>
+          <span>
+            <img src="file:///C:/Users/ga787/Downloads/sunset.png" width="60px" height="55px" style="padding-left: 2px;">
+            <p><span id="SSValue"></span>Sunset</p>
+          </span>
+            </div>
+              <div class="clouds">
+                Clouds
+                <img src="file:///C:/Users/ga787/Downloads/clouds.png" width="60px" height="55px" style="padding-left: 5px;">
+                <h1 class="CValue"></h1>
+              </div>
+                <div class="uv-index">
+                Sea level
+                <img src="file:///C:/Users/ga787/Downloads/flood.png" width="60px" height="55px" style="padding-left: 5px;">
+                  <h1 class="UVValue"></h1>
+                </div>
+                <div class="pressure">
+                  Presure
+                  <img src="file:///C:/Users/ga787/Downloads/pressure-gauge.png" width="60px" height="55px" style="padding-left: 5px;">
+                   <h1 class="PValue"></h1>
+                 </div>
+                 </div>
+                <br />
+
+                
+                <div class="air-quality">
+                  <h3>🌫️ Air Quality Index</h3>
+                  <p><strong>AQI:</strong> <span id="AQIValue">120</span> - Moderate</p>
+              </div>
+       
+ </div>
+</div>
+</body>
+</html>
